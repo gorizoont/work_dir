@@ -1,0 +1,34 @@
+version: '2'
+name: Joomla
+services: 
+  joomla:
+    #image: joomla:3.10-php7.4-apache-apache-php7
+    image: joomla:3.10-php7.4-apache
+    links:
+     - mysql
+    ports:
+     - "80:80"
+    environment:
+     - JOOMLA_DB_HOST=mysql:3306
+     - JOOMLA_DB_PASSWORD=12345678
+    volumes:
+     - ./code:/var/www/html
+  
+  mysql:
+    image: mysql:5.7.14
+    environment:
+     - MYSQL_ROOT_PASSWORD=12345678
+     - MYSQL_DATABASE=joomla
+    volumes:
+     - ./database:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.6.4-1
+    links:
+     - mysql
+    ports:
+     - "81:80"
+    environment:
+     - PMA_HOST=mysql
+
+     
