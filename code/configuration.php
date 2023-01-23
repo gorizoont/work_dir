@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'Сайт закрыт на техническое обслуживание.<br>Пожалуйста, зайдите позже.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'Test';
+	public $sitename = 'Joomla-3';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -16,10 +16,10 @@ class JConfig {
 	public $host = 'mysql:3306';
 	public $user = 'root';
 	public $password = '12345678';
-	public $db = 'joomla';
-	public $dbprefix = 'zodqg_';
+	public $db = 'joomla222';
+	public $dbprefix = 'ixhtg_';
 	public $live_site = '';
-	public $secret = 'hY3kSwtA2CsaiizA';
+	public $secret = '0PHnuB00ErCWfIzr';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
@@ -33,7 +33,7 @@ class JConfig {
 	public $mailonline = '1';
 	public $mailer = 'mail';
 	public $mailfrom = 'gorizzont.s@gmail.com';
-	public $fromname = 'Test';
+	public $fromname = 'Joomla-3';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = '';
