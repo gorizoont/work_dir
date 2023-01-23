@@ -1,0 +1,156 @@
+
+
+/* SumDU Header */
+.sumdu-header{
+	background-color: #011f5b;
+	padding: 4px 0;
+	color: #fff;
+	height: 40px;
+	font-size: 13px;
+	position: relative;
+}
+.sumdu-header__web {
+	font-size: 18px;
+	padding: 10px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	opacity: 0.5;
+	color: #fff;
+	transition: all 0.3s 0.1s;
+	text-decoration: none;
+}
+.sumdu-header__web:hover {
+	color: #fff;
+	opacity: 0.9;
+	text-decoration: none;
+}
+.sumdu-header__logo {
+	display: inline-block;
+	height: 32px;
+	background-image: url(../images/logo-sumdu-circle.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 29px;
+	padding: 6px;
+	padding-left: 48px;
+	box-sizing: border-box;;
+}
+.sumdu-header__logo:hover {
+	text-decoration: underline;
+}
+.sumdu-header__nav-separator {
+	padding: 0 3px;
+	font-size: 16px;
+	color: #9daac4;
+}
+.sumdu-header__division {
+	color: #9daac4;
+}
+.sumdu-header__nav {
+	float: left;
+}
+.sumdu-header__nav a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+.sumdu-header__nav > ul {
+	margin: 0;
+	padding: 0;
+}
+.sumdu-header__nav-item {
+	display: inline-block;
+	padding-right: 20px;
+}
+.sumdu-header__nav-icon {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 6px 10px;
+	border-radius: 50px;
+	width: 32px;
+	height: 32px;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-left: 5px;
+	transition: all 0.3s 0.1s;
+}
+.sumdu-header__nav-item:hover .sumdu-header__nav-icon {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.sumdu-header__nav-item > a:hover {
+	text-decoration: underline;
+}
+.sumdu-header__nav--right {
+	float: right;
+}
+
+/* All SumDU Modal PopUp */
+/* ============================================ */
+.sumdu-modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	opacity: 0;
+	visibility: hidden;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	transform: translateY(-100%);
+	transition: all 0.3s 0.1s;
+	border-top: 3px solid #011f5b;
+	padding-top: 20px;
+}
+.sumdu-modal--show {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+#allUniversity__modalClose {
+	width: 50px;
+	height: 50px;
+	color: #333;
+	background-color: #ccc;
+	border-radius: 50%;
+	position: absolute;
+	font-size: 26px;
+	text-align: center;
+	top: 20px;
+	right: 40px;
+	cursor: pointer;
+	padding: 15px;
+	opacity: 0.5;
+	transition: all 0.3s 0.1s;
+ }
+#allUniversity__modalClose:hover {
+	background-color: #ccc;
+	opacity: 1;
+	cursor: pointer;
+}
+#allUniversity__modalContent {
+	height: 100%;
+}
+.allUniversity__modalFrame {
+	width: 100%;
+	height: 100%;
+}
+/* ============================================ */
+
+@media (max-width: 768px) {
+	#allUniversity__modalClose {
+		right: 20px;
+	 }
+}
+
+@media (max-width: 640px) {
+	.sumdu-header__nav-text {
+		display: none;
+   }
+   .sumdu-header__nav-item {
+      padding-right: 5px;
+  }
+}
+

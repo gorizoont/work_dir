@@ -1,0 +1,624 @@
+/**
+* @author Design & Accessible Team (Sumy State University)
+* @package Joomla
+* @subpackage Accessible-Template-SSU
+* @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant to the
+* GNU General Public License, and as distributed it includes or is derivative
+* of works licensed under the GNU General Public License or other free or open
+* source software licenses. See COPYRIGHT.php for copyright notices and
+* details.
+*/
+
+/* Global styles */
+.header__link a::after {
+    display: none;
+}
+
+/* ==================================================== */
+/* Light Blue */
+/* ==================================================== */
+.theme-lightblue .header,
+.theme-lightblue .header__lang .btn-group > a,
+.theme-lightblue .header__menu .collapsed {
+    background-color: #bbddff;
+}
+/* Nav menu */
+.theme-lightblue .header__subnav {
+    background-color: #bbddff;
+}
+/* Copyright and info 2 block */
+.theme-lightblue .copyright,
+.theme-lightblue .section--info-2 {
+    background-color: #bbddff;
+}
+.theme-lightblue .nav > li > a:hover, 
+.theme-lightblue .nav > li > a:focus,
+.theme-lightblue .header__search a:hover, 
+.theme-lightblue .header__link a:hover,
+.theme-lightblue .header__lang .btn-group > a:hover,
+.theme-lightblue .header__lang .btn-group.open,
+.theme-lightblue .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #85b6e7;
+}
+/* .theme-lightblue .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+} */
+.theme-lightblue .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-lightblue .header,
+.theme-lightblue .header__subnav > nav > .nav--horizontal,
+.theme-lightblue .header__logo-sumdu,
+.theme-lightblue .header__extra, 
+.theme-lightblue .header__menu, 
+.theme-lightblue .header__lang, 
+.theme-lightblue .header__search, 
+.theme-lightblue .header__link {
+    border-color: #9fc9ea;
+}
+/* Copyright and info 2 block */
+.theme-lightblue .copyright,
+.theme-lightblue .module--border-top {
+    border-color: #9fc9ea;
+}
+.theme-lightblue .module--border-top,
+.theme-lightblue .copyright {
+    border-top-style: solid;
+}
+.theme-lightblue .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-lightblue .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-lightblue .header__logo-site,
+.theme-lightblue .header__logo-site a,
+.theme-lightblue .header__search a, 
+.theme-lightblue .header__link a,
+.theme-lightblue .header__lang .btn-group > a,
+.theme-lightblue .nav--horizontal a,
+.theme-lightblue .nav--horizontal a:hover {
+    color: #00355c;
+}
+/* Copyright and info 2 block */
+.theme-lightblue .section--info-2,
+.theme-lightblue .copyright__text,
+.theme-lightblue .copyright__text a {
+    color: #00355c;
+}
+.theme-lightblue .header__lang .btn-group > a .caret {
+    border-top-color: #00355c;
+}
+.theme-lightblue .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+/*  Slider custom */
+.theme-lightblue .slider__description--simple {
+    padding: 50px !important;
+}
+.theme-lightblue .slider__title {
+    font-size: 45px !important;
+}
+
+@media (max-width: 1200px) {
+    .theme-lightblue .slider__title {
+      font-size: 42px !important;
+  }
+}
+@media (max-width: 1000px) {
+    .theme-lightblue .slider__title {
+      font-size: 40px !important;
+  }
+}
+@media (max-width: 900px) {
+    .theme-lightblue .slider__title {
+      font-size: 32px !important;
+  }
+}
+
+/* ==================================================== */
+/* Blue */
+/* ==================================================== */
+.theme-blue .header,
+.theme-blue .header__lang .btn-group > a,
+.theme-blue .header__menu .collapsed {
+    background-color: #12539c;
+}
+/* Nav menu */
+.theme-blue .header__subnav {
+    background-color: #4d82d2;
+}
+/* Copyright and info 2 block */
+/* .theme-blue .copyright,
+.theme-blue .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-blue .nav > li > a:hover, 
+.theme-blue .nav > li > a:focus,
+.theme-blue .header__search a:hover, 
+.theme-blue .header__link a:hover,
+.theme-blue .header__lang .btn-group > a:hover,
+.theme-blue .header__lang .btn-group.open,
+.theme-blue .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #4d82d2;
+}
+.theme-blue .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-blue .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-blue .header,
+.theme-blue .header__subnav > nav > .nav--horizontal,
+.theme-blue .header__logo-sumdu,
+.theme-blue .header__extra, 
+.theme-blue .header__menu, 
+.theme-blue .header__lang, 
+.theme-blue .header__search, 
+.theme-blue .header__link {
+    border-color: #4d82d2;
+}
+/* Copyright and info 2 block */
+/* .theme-blue .copyright,
+.theme-blue .module--border-top {
+    border-color: #347ed2;
+} */
+.theme-blue .module--border-top,
+.theme-blue .copyright {
+    border-top-style: solid;
+}
+.theme-blue .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-blue .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-blue .header__logo-site,
+.theme-blue .header__logo-site a,
+.theme-blue .header__search a, 
+.theme-blue .header__link a,
+.theme-blue .header__lang .btn-group > a,
+.theme-blue .nav--horizontal a,
+.theme-blue .nav--horizontal a:hover {
+    color: #fff;
+}
+/* Copyright and info 2 block */
+/* .theme-blue .section--info-2,
+.theme-blue .copyright__text,
+.theme-blue .copyright__text a {
+    color: #00355c;
+} */
+.theme-blue .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-blue .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+/* ==================================================== */
+/* Dark Blue */
+/* ==================================================== */
+.theme-darkblue .header,
+.theme-darkblue .header__lang .btn-group > a,
+.theme-darkblue .header__menu .collapsed {
+    background-color: #00355c;
+}
+/* Nav menu */
+.theme-darkblue .header__subnav {
+    background-color: #14539b;
+}
+/* Copyright and info 2 block */
+/* .theme-darkblue .copyright,
+.theme-darkblue .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-darkblue .header__search a:hover, 
+.theme-darkblue .header__link a:hover,
+.theme-darkblue .header__lang .btn-group > a:hover,
+.theme-darkblue .header__lang .btn-group.open,
+.theme-darkblue .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #14539b;
+}
+.theme-darkblue .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-darkblue .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-darkblue .header,
+.theme-darkblue .header__subnav > nav > .nav--horizontal,
+.theme-darkblue .header__logo-sumdu,
+.theme-darkblue .header__extra, 
+.theme-darkblue .header__menu, 
+.theme-darkblue .header__lang, 
+.theme-darkblue .header__search, 
+.theme-darkblue .header__link {
+    border-color: #14539b;
+}
+/* Copyright and info 2 block */
+/* .theme-darkblue .copyright,
+.theme-darkblue .module--border-top {
+    border-color: #347ed2;
+} */
+/* .theme-darkblue .module--border-top,
+.theme-darkblue .copyright {
+    border-top-style: solid;
+} */
+.theme-darkblue .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-darkblue .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-darkblue .header__logo-site,
+.theme-darkblue .header__logo-site a,
+.theme-darkblue .header__search a, 
+.theme-darkblue .header__link a,
+.theme-darkblue .header__lang .btn-group > a,
+.theme-darkblue .nav--horizontal > .nav__item > a,
+.theme-darkblue .nav--horizontal-all > .nav__item > a {
+    color: #fff;
+}
+.theme-darkblue .nav--horizontal > .nav__item:hover a,
+.theme-darkblue .nav--horizontal-all > .nav__item:hover a {
+    color: #00355c;
+}
+/* Copyright and info 2 block */
+/* .theme-darkblue .section--info-2,
+.theme-darkblue .copyright__text,
+.theme-darkblue .copyright__text a {
+    color: #00355c;
+} */
+.theme-darkblue .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-darkblue .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+@media (max-width: 979px) {
+    .theme-darkblue .nav--horizontal-all > .nav__item > a,
+    .theme-darkblue .header__search a, 
+    .theme-darkblue .header__link a {
+        color: #00355c;
+    }
+    .theme-darkblue .header__menu .collapsed {
+        color: #fff;
+    }
+    .theme-darkblue .header__search a:hover, 
+    .theme-darkblue .header__link a:hover {
+        background-color: #f1f1f1;
+    }
+    .theme-darkblue .header__lang, 
+    .theme-darkblue .header__search, 
+    .theme-darkblue .header__link {
+        border-color: #ccc;
+    }
+}
+
+/* ==================================================== */
+/* Green */
+/* ==================================================== */
+.theme-green .header,
+.theme-green .header__lang .btn-group > a,
+.theme-green .header__menu .collapsed {
+    background-color: #005c2e;
+}
+/* Nav menu */
+.theme-green .header__subnav {
+    background-color: #008844;
+}
+/* Copyright and info 2 block */
+/* .theme-green .copyright,
+.theme-green .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-green .nav > li > a:hover, 
+.theme-green .nav > li > a:focus,
+.theme-green .header__search a:hover, 
+.theme-green .header__link a:hover,
+.theme-green .header__lang .btn-group > a:hover,
+.theme-green .header__lang .btn-group.open,
+.theme-green .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #008844;
+}
+.theme-green .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-green .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-green .header,
+.theme-green .header__subnav > nav > .nav--horizontal,
+.theme-green .header__logo-sumdu,
+.theme-green .header__extra, 
+.theme-green .header__menu, 
+.theme-green .header__lang, 
+.theme-green .header__search, 
+.theme-green .header__link {
+    border-color: #008844;
+}
+/* Copyright and info 2 block */
+/* .theme-green .copyright,
+.theme-green .module--border-top {
+    border-color: #347ed2;
+} */
+.theme-green .module--border-top,
+.theme-green .copyright {
+    border-top-style: solid;
+}
+.theme-green .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-green .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-green .header__logo-site,
+.theme-green .header__logo-site a,
+.theme-green .header__search a, 
+.theme-green .header__link a,
+.theme-green .header__lang .btn-group > a,
+.theme-green .nav--horizontal a,
+.theme-green .nav--horizontal a:hover {
+    color: #fff;
+}
+/* Copyright and info 2 block */
+/* .theme-green .section--info-2,
+.theme-green .copyright__text,
+.theme-green .copyright__text a {
+    color: #00355c;
+} */
+.theme-green .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-green .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+/* ==================================================== */
+/* Red */
+/* ==================================================== */
+.theme-red .header,
+.theme-red .header__lang .btn-group > a,
+.theme-red .header__menu .collapsed {
+    background-color: #5e1717;
+}
+/* Nav menu */
+.theme-red .header__subnav {
+    background-color: #7a2525;
+}
+/* Copyright and info 2 block */
+/* .theme-red .copyright,
+.theme-red .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-red .nav > li > a:hover, 
+.theme-red .nav > li > a:focus,
+.theme-red .header__search a:hover, 
+.theme-red .header__link a:hover,
+.theme-red .header__lang .btn-group > a:hover,
+.theme-red .header__lang .btn-group.open,
+.theme-red .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #7a2525;
+}
+.theme-red .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-red .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-red .header,
+.theme-red .header__subnav > nav > .nav--horizontal,
+.theme-red .header__logo-sumdu,
+.theme-red .header__extra, 
+.theme-red .header__menu, 
+.theme-red .header__lang, 
+.theme-red .header__search, 
+.theme-red .header__link {
+    border-color: #7a2525;
+}
+/* Copyright and info 2 block */
+/* .theme-red .copyright,
+.theme-red .module--border-top {
+    border-color: #347ed2;
+} */
+.theme-red .module--border-top,
+.theme-red .copyright {
+    border-top-style: solid;
+}
+.theme-red .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-red .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-red .header__logo-site,
+.theme-red .header__logo-site a,
+.theme-red .header__search a, 
+.theme-red .header__link a,
+.theme-red .header__lang .btn-group > a,
+.theme-red .nav--horizontal a,
+.theme-red .nav--horizontal a:hover {
+    color: #fff;
+}
+/* Copyright and info 2 block */
+/* .theme-red .section--info-2,
+.theme-red .copyright__text,
+.theme-red .copyright__text a {
+    color: #00355c;
+} */
+.theme-red .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-red .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+/* ==================================================== */
+/* Orange */
+/* ==================================================== */
+.theme-orange .header,
+.theme-orange .header__lang .btn-group > a,
+.theme-orange .header__menu .collapsed {
+    background-color: #553517;
+}
+/* Nav menu */
+.theme-orange .header__subnav {
+    background-color: #754f2b;
+}
+/* Copyright and info 2 block */
+/* .theme-orange .copyright,
+.theme-orange .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-orange .nav > li > a:hover, 
+.theme-orange .nav > li > a:focus,
+.theme-orange .header__search a:hover, 
+.theme-orange .header__link a:hover,
+.theme-orange .header__lang .btn-group > a:hover,
+.theme-orange .header__lang .btn-group.open,
+.theme-orange .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #754f2b;
+}
+.theme-orange .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-orange .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-orange .header,
+.theme-orange .header__subnav > nav > .nav--horizontal,
+.theme-orange .header__logo-sumdu,
+.theme-orange .header__extra, 
+.theme-orange .header__menu, 
+.theme-orange .header__lang, 
+.theme-orange .header__search, 
+.theme-orange .header__link {
+    border-color: #754f2b;
+}
+/* Copyright and info 2 block */
+/* .theme-orange .copyright,
+.theme-orange .module--border-top {
+    border-color: #347ed2;
+} */
+.theme-orange .module--border-top,
+.theme-orange .copyright {
+    border-top-style: solid;
+}
+.theme-orange .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-orange .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-orange .header__logo-site,
+.theme-orange .header__logo-site a,
+.theme-orange .header__search a, 
+.theme-orange .header__link a,
+.theme-orange .header__lang .btn-group > a,
+.theme-orange .nav--horizontal a,
+.theme-orange .nav--horizontal a:hover {
+    color: #fff;
+}
+/* Copyright and info 2 block */
+/* .theme-orange .section--info-2,
+.theme-orange .copyright__text,
+.theme-orange .copyright__text a {
+    color: #00355c;
+} */
+.theme-orange .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-orange .header__lang .btn-group > a {
+    text-shadow: none;
+}
+
+
+/* ==================================================== */
+/* Gray */
+/* ==================================================== */
+.theme-gray .header,
+.theme-gray .header__lang .btn-group > a,
+.theme-gray .header__menu .collapsed {
+    background-color: #444444;
+}
+/* Nav menu */
+.theme-gray .header__subnav {
+    background-color: #636363;
+}
+/* Copyright and info 2 block */
+/* .theme-gray .copyright,
+.theme-gray .section--info-2 {
+    background-color: #bbddff;
+} */
+.theme-gray .nav > li > a:hover, 
+.theme-gray .nav > li > a:focus,
+.theme-gray .header__search a:hover, 
+.theme-gray .header__link a:hover,
+.theme-gray .header__lang .btn-group > a:hover,
+.theme-gray .header__lang .btn-group.open,
+.theme-gray .header__lang .btn-group.open .btn.dropdown-toggle {
+    background-color: #636363;
+}
+.theme-gray .header__logo-sumdu svg .cls-1 {
+    fill: #fff;
+}
+.theme-gray .nav--horizontal > .nav__item > a::after {
+    background-color: #fff;
+}
+.theme-gray .header,
+.theme-gray .header__subnav > nav > .nav--horizontal,
+.theme-gray .header__logo-sumdu,
+.theme-gray .header__extra, 
+.theme-gray .header__menu, 
+.theme-gray .header__lang, 
+.theme-gray .header__search, 
+.theme-gray .header__link {
+    border-color: #636363;
+}
+/* Copyright and info 2 block */
+/* .theme-gray .copyright,
+.theme-gray .module--border-top {
+    border-color: #347ed2;
+} */
+.theme-gray .module--border-top,
+.theme-gray .copyright {
+    border-top-style: solid;
+}
+.theme-gray .breadcrumb {
+    padding: 15px 25px;
+    background-color: #fff;
+}
+.theme-gray .breadcrumb > li {
+    text-shadow: 0 0 0 #fff;
+}
+.theme-gray .header__logo-site,
+.theme-gray .header__logo-site a,
+.theme-gray .header__search a, 
+.theme-gray .header__link a,
+.theme-gray .header__lang .btn-group > a,
+.theme-gray .nav--horizontal a,
+.theme-gray .nav--horizontal a:hover {
+    color: #fff;
+}
+/* Copyright and info 2 block */
+/* .theme-gray .section--info-2,
+.theme-gray .copyright__text,
+.theme-gray .copyright__text a {
+    color: #00355c;
+} */
+.theme-gray .header__lang .btn-group > a .caret {
+    border-top-color: #fff;
+}
+.theme-gray .header__lang .btn-group > a {
+    text-shadow: none;
+}

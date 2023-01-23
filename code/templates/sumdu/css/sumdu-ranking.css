@@ -1,0 +1,188 @@
+
+ /**
+* @author Design & Accessible Team (Sumy State University)
+* @package Joomla
+* @subpackage Accessible-Template-SSU
+* @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant to the
+* GNU General Public License, and as distributed it includes or is derivative
+* of works licensed under the GNU General Public License or other free or open
+* source software licenses. See COPYRIGHT.php for copyright notices and
+* details.
+*/
+ 
+ /* SumDU Ranking page */
+ .ranking-content {
+	background-color: #f0f0f0;
+	text-transform: uppercase;
+ }
+ 
+ /* colors - containers*/
+ .ranking-item-navy {
+	color: #224194;
+	border-color: #224194;
+ }
+ 
+ .ranking-item-blue {
+	color: #4e90cc;
+	border-color: #4e90cc;
+ }
+ 
+ .ranking-item-red {
+	color: #c31327;
+	border-color: #c31327;
+ }
+ 
+ .ranking-item-green {
+	color: #189547;
+	border-color: #189547;
+ }
+ 
+ .ranking-item-orange {
+	color: #ef7b0e;
+	border-color: #ef7b0e;
+ }
+ 
+ .ranking-item-centred {
+	text-align: center;
+ }
+ 
+ .ranking-item__description {
+	font-size: 12px;
+	color: inherit;
+	margin-top: 10px;
+ }
+ 
+ .ranking-item__titleDigit {
+	font-size: 33px;
+ }
+ 
+ .ranking-item__title-small {
+	font-size: 19px;
+ }
+ 
+ .ranking-item__subTitle-leftBorder {
+	border-left: 2px solid;
+	padding-left: 8px;
+ }
+ 
+ .ranking-item__subTitle-topBorder {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	padding-top: 8px;
+	padding-bottom: 8px;
+ }
+ 
+ .ranking-item__description-block {
+	display: block;
+	text-align: center;
+ }
+ 
+ .ranking-item__content {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+ }
+ 
+ .ranking-item__title-inherit {
+	width: 50%;
+	flex: inherit !important;
+ }
+ 
+ .ranking-item {
+	margin: 35px 0;
+	padding: 0 10%;
+ 
+ }
+ 
+ .ranking-item-link {
+	color: inherit;
+	display: block;
+ }
+ 
+ .ranking-item-link:hover {
+	text-decoration: none;
+	color: inherit;
+ }
+ 
+ .ranking-item-link:visited {
+	text-decoration: none;
+	color: inherit;
+ }
+ 
+ .ranking-item-link:active {
+	text-decoration: none;
+	color: inherit;
+ }
+ 
+ .ranking-item-half {
+	width: 50%;
+ }
+ 
+ .ranking-item__title {
+	font-weight: bolder;
+	text-align: right;
+	margin-right: 1rem;
+	font-size: 27px;
+	align-self: center;
+	line-height: initial;
+ }
+ 
+ .ranking-item__title-noM {
+	margin: 0;
+ }
+ 
+ .ranking-item__title-wrap {
+	white-space: pre-wrap;
+ }
+ 
+ .ranking-item__subTitle {
+	display: flex;
+	font-size: 15px;
+	align-items: center;
+	font-weight: bold;
+ }
+ .ranking-item__subTitle-block {
+	display: block;
+	margin-top: 8px;
+ }
+ 
+ .ranking-flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+	.ranking-item__title {
+	  flex: inherit;
+	}
+ }
+ 
+ 
+ @media only screen and (max-width: 767px) {
+	.ranking-item__subTitle-block {
+	  margin: 8px 125px;
+	}
+ }
+ 
+ @media only screen and (max-width: 600px) {
+	.ranking-item {
+	  padding: 0 10px;
+	}
+	.ranking-item__subTitle-block {
+	  margin: 8px 50px;
+	}
+ }
+ 
+ @media only screen and (max-width: 450px) {
+	.ranking-item__subTitle-block {
+	  margin: 8px 15px;
+	}
+ 
+	.ranking-item__subTitle-wbm {
+	  word-break: break-all;
+	}
+ }
+ 

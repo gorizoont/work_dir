@@ -1,0 +1,322 @@
+/**
+* @author Design & Accessible Team (Sumy State University)
+* @package Joomla
+* @subpackage Accessible-Template-SSU
+* @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant to the
+* GNU General Public License, and as distributed it includes or is derivative
+* of works licensed under the GNU General Public License or other free or open
+* source software licenses. See COPYRIGHT.php for copyright notices and
+* details.
+*/
+
+@media (max-width: 1680px) {
+	.module--container {
+		overflow: hidden;
+	}
+    .wrapper--fluid .container-fluid {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1500px) {
+	.sumdu-user-menu .menu__image-item {
+		height: 110px !important;
+	}
+}
+
+@media (max-width: 1410px) {
+	.banners__title {
+		padding-right: 75px !important;
+	}
+  	.header__link a {
+		padding: 30px;
+	}
+	.header__link span{
+		display: none;
+	}
+	.header__link i{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1350px) {
+	.banners__title {
+		font-size: 18px !important;
+	}
+	.sumdu-user-menu .menu__image-item {
+		height: 100px !important;
+	}
+	.menu--entrant {
+		position: relative;
+	}
+	.menu--entrant > li > a {
+		 display: block;
+		 padding: 22px 10px;
+		 color: #fff;
+		 font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+	.menu--top > li > a {
+		display: block;
+		padding: 30px 15px;
+	}
+	.sumdu-user-menu .menu__image-item {
+		height: 85px !important;
+	}
+	.sumdu-user-menu__item > a {
+		font-size: 18px !important;
+	}
+	.banners__title {
+		padding: 15px !important;
+		padding-right: 75px !important;
+	}
+}
+
+@media (max-width: 1100px) {
+	.button {
+		padding: 14px 5px;
+	}
+	.wrapper {
+		width: 100%;
+		min-width: 100%;
+	}
+	.news-info {
+		position: relative;
+		top: 10px;
+		float: none;
+		margin-top: 15px;
+	}
+	.news-info > div {
+		display: inline-block;
+		margin-right: 35px;
+		vertical-align: text-top;
+	}
+	.news-item {
+		margin-left: 0;
+	}
+	.nav--horizontal-all > .nav__item > a:after {
+		left: 12px;
+		right: 12px;
+	}
+}
+
+@media (max-width: 979px) {
+	.header--sticky {
+		position: relative;
+	}
+	.header .nav--horizontal > .nav__item > a {
+		color: #777;
+	}
+	.navigation__button {
+		display: block;
+	}
+	.navigation .nav--horizontal > .nav__item {
+		display: block;
+	}
+	.navigation .nav--horizontal > .nav__item.parent:hover > .nav-child {
+		display: none;
+	}
+	.navigation .nav--horizontal > .nav__item > a:hover {
+		background-color: #fff;
+	}
+	.navigation .nav--horizontal > .nav__item > a::after {
+	background-color: transparent;
+	}
+	.header__search a, 
+	.header__link a,
+	.header__lang .lang-inline a {
+		color: #777;
+	}
+	.modal {
+		width: initial;
+		margin-left: initial;
+	}
+	.header__search span {
+		display: inline;
+	}
+	.mod-languages > .btn-group > a {
+		display: none !important;
+	}
+	.mod-languages .lang-block {
+		display: block;
+		position: relative;
+		top: 0;
+	}
+	.mod-languages .lang-block li {
+		display: inline-block !important;
+	}
+	.header__lang, 
+	.header__search, 
+	.header__link {
+		float: none;
+		border-left: 0px solid #f1f1f1;
+		border-top: 1px solid #f1f1f1;
+		display: block;
+	}
+	.header__lang > a, 
+	.header__search > a, 
+	.header__link > a {
+		display: block;
+	}
+	.header__lang:hover {
+		background-color: #fff !important;
+	}
+	.header__extra,
+	.header__menu {
+		display: block;
+	}
+	.header__extra-reset {
+		float: none;
+		clear: both;
+	}
+	.header__extra-items {
+		text-align: center;
+		background-color: #fff;
+		border-top: 1px solid #f1f1f1;
+	}
+	.header__extra-items .header__link span {
+		display: inline-block;
+		padding-right: 5px;
+	}
+	.header__menu-items.nav-collapse.collapse {
+		top: 0;
+		background: #f1f1f1;
+		overflow: hidden !important;
+		box-shadow: 0 5px rgba(0, 0, 0, 0.12);
+	}
+	.header__menu-items .header__nav {
+		position: relative;
+	}
+	.header__nav .menu--top > li {
+		display: block;
+	}
+	.header__nav .menu--top > li > a {
+		padding: 20px 10px;
+	}
+	.header__nav .menu--top > li > a:hover {
+		background-color: #ccc;
+	}
+	.header__nav .menu--top > li > ul {
+		display: block;
+		position: relative !important;
+		top: 0  !important;
+	}
+	.menu--top > li > ul.dropdown-menu,
+	.menu--top > li:hover > ul.dropdown-menu {
+		padding: 0 !important;
+		margin: 0 !important;
+		box-shadow: 0 0 #000;
+		background: #fff;
+		display: block;
+		float: none;
+	}
+	.menu--top > li > ul.dropdown-menu .item-position-right {
+		display: none !important;
+	}
+	.menu--top > li > ul.dropdown-menu > li {
+		border-top: 1px solid #f1f1f1;
+		display: block;
+		float: none !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
+	.menu--top > li > ul.dropdown-menu > li > a {
+		display: block !important;
+		padding: 15px 20px !important;
+		font-weight: normal;
+		font-size: 16px;
+		background-color: #f8f8f8 !important;
+	}
+	.menu--top > li > ul.dropdown-menu > li > a:hover {
+		background-color: #fff !important;
+	}
+	.header__nav .menu--top > li > ul > li {
+		display: block !important;
+		float: none !important;
+	}
+	.header__nav .menu--top > li > ul > li > ul {
+		display: none;
+	}
+	.menu--top > li:hover > ul.dropdown-menu > li > ul.dropdown-menu {
+		display: none;
+	}
+	.sumdu-user-menu__item {
+		width: 50%;
+	}
+	.banners__item {
+		width: 50% !important;
+	}
+	.banners__title {
+		font-size: 22px !important;
+		padding: 15px !important;
+		padding-right: 55px !important;
+	}
+	.links__item {
+		width: 50% !important;
+	}
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 767px) {
+	.header__subnav-btn {
+		display: block;
+	}
+	.header__subnav.collapse{
+		height: 0;
+		overflow: hidden;
+	}
+	.header__subnav > .nav > li {
+		display: block;
+	}
+	.page--home .banners {
+		padding: 20px 10px 1px 10px !important;
+	}
+	.module--mobile-hide .api-news__list,
+	.module--mobile-hide > .page-header {
+		display: none;
+	}
+    .wrapper--fluid .container-fluid {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 640px) {
+	.banners__item {
+		float: none !important;
+		width: 100% !important;
+	}
+	.banners__title {
+		padding: 25px !important;
+		padding-right: 115px !important;
+	}
+	.sumdu-user-menu__item {
+		width: 100%;
+	}
+	.links__item {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.header__logo .header__logo-sumdu {
+		display: none;
+	}
+	.header__menu > a > span {
+		display: none;
+	}
+}
+
+@media (max-width: 340px) {
+
+}

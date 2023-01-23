@@ -1,0 +1,60 @@
+/**
+* @author Design & Accessible Team (Sumy State University)
+* @package Joomla
+* @subpackage Accessible-Template-SSU
+* @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant to the
+* GNU General Public License, and as distributed it includes or is derivative
+* of works licensed under the GNU General Public License or other free or open
+* source software licenses. See COPYRIGHT.php for copyright notices and
+* details.
+*/
+
+/* Blog list events */
+.blog-events__text-label {
+	padding: 5px 0;
+	color: #a7a7a7;
+}
+.blog-events__date-last {
+	padding: 10px 0;
+	padding-top: 20px;
+	font-size: 14px;
+}
+.blog-events__item--archive {
+	background-color: #f1f1f1;
+	border-color: #fff;
+	border-top: 3px solid #ccc;
+}
+.blog-events__label--archive {
+	background-color: #ccc;
+	color: #333;
+}
+/* item events */
+/* .item-pageevents {
+	padding: 20px 30px;
+	border: 1px solid #e2e2e2;
+}*/
+.item-pageevents .page-header {
+	padding: 10px;
+	margin: 0;
+} 
+.item-pageevents .fields-container {
+	border: 1px solid #e2e2e2;
+	/* border-bottom: 1px solid #e2e2e2; */
+	padding: 20px;
+	/* padding-top: 35px; */
+	padding-bottom: 15px;
+	margin: 0;
+	/* margin-bottom: 20px; */
+	background-color: #f1f1f1;
+	/* background-image: url(../images/triangle-top.png); */
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+.item-pageevents div[itemprop="articleBody"] {
+	padding: 25px 20px;
+	border: 1px solid #e2e2e2;
+	border-top: 1px solid #fff;
+}

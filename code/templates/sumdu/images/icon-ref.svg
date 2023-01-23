@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2780d4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="box" class="cls-1" d="M0,12V2.125H6.154V3.359H1.232v7.406H8.615V5.581H9.845V12H0Z"/>
+  <path id="arrow" class="cls-1" d="M10.793,5.064V2.082L3.565,9.333,2.695,8.46,9.91,1.222H6.723V-0.013L12-.014V5.064H10.793Z"/>
+</svg>

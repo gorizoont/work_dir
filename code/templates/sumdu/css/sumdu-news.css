@@ -1,0 +1,116 @@
+/**
+ * @author Design & Accessible Team (Sumy State University)
+ * @package Joomla
+ * @subpackage Accessible-Template-SSU
+ * @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+ /* Sumdu top menu */
+.sumdu {
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+}
+.sumdu__nav {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.sumdu__item {
+	display: inline-block;
+}
+.sumdu__item--left {
+	float: left;
+}
+.sumdu__item--right {
+	float: right;
+}
+.sumdu__item-link {
+	display: block;
+	padding: 8px;
+	color: #333;
+	font-size: 13px;
+}
+.sumdu__item-link:hover {
+	color: #333;
+}
+.sumdu i {
+	font-size: 15px;
+	padding: 0 6px;
+}
+
+/* Legacy gallery style */
+.gallery_wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 5px;
+ }
+.gallery_wrapper ul > li {
+	display: inline-block;
+	background-color: #333;
+	margin: 2px;
+}
+.gallery_wrapper ul > li > a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 150px;
+	height: 100px;
+}
+.gallery_wrapper ul > li > a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/zoom.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: all 0.3s 0.3s;
+}
+.gallery_wrapper ul > li:hover > a:after {
+	opacity: 0.8;
+}
+.gallery_wrapper ul > li img {
+	opacity: 1;
+	transition: all 0.3s 0.1s;
+}
+.gallery_wrapper ul > li:hover img {
+	opacity: 0.5;
+}
+
+/* News blog */
+.news-blog .item > .page-header {
+  margin-bottom: 0px;
+}
+
+/* Rezonans Btn 
+.item-109 a {
+	padding: 0 28px !important;
+	margin: 10px;
+	border-radius: 50px;
+	background-color: #f1f1f1 !important;
+}
+.item-109 a:hover {
+	background-color: rgb(221, 221, 221) !important;
+}
+.item-109:hover {
+	background-color: #fff !important;
+}
+.item-109 span.image-title {
+	display: none;
+}
+*/

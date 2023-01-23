@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+        <name>SumDU</name>
+        <creationDate>2018-08-10</creationDate>
+        <author>SumDU</author>
+        <authorEmail>info@linet.sumdu.edu.ua</authorEmail>
+        <authorUrl>http://web.sumdu.edu.ua</authorUrl>
+        <copyright>SumDU</copyright>
+        <license>GNU/GPL 2 or Later</license>
+        <version>0.10.1</version>
+        <description>TPL_SUMDU_DESC</description>
+        <files>
+                <filename>index.html</filename>
+                <filename>index.php</filename>
+                <filename>error.php</filename>
+                <filename>raw.php</filename>
+                <filename>json.php</filename>
+                <filename>ics.php</filename>
+                <filename>templateDetails.xml</filename>
+                <filename>template_preview.png</filename>
+                <filename>template_thumbnail.png</filename>
+                <filename>favicon.ico</filename>
+                <folder>css</folder>
+                <folder>helpers</folder>
+                <folder>html</folder>
+                <folder>images</folder>
+                <folder>js</folder>
+                <folder>language</folder>
+                <folder>positions</folder>
+                <folder>vendor</folder>
+        </files>
+        <positions>
+                <position>header-1</position>
+                <position>header-2</position>
+                <position>header-3</position>
+                <position>navigation</position>
+                <position>info-1</position>
+                <position>info-2</position>
+                <position>user-1</position>
+                <position>user-2</position>
+                <position>top-1</position>
+                <position>top-2</position>
+                <position>top-3</position>
+                <position>top-4</position>
+                <position>content-1</position>
+                <position>content-2</position>
+                <position>left</position>
+                <position>right</position>
+                <position>bottom-1</position>
+                <position>bottom-2</position>
+                <position>bottom-3</position>
+                <position>bottom-4</position>
+                <position>contact-1</position>
+                <position>contact-2</position>
+                <position>contact-3</position>
+                <position>contact-4</position>
+                <position>footer-1</position>
+                <position>footer-2</position>
+                <position>footer-3</position>
+                <position>footer-4</position>
+                <position>copyright</position>
+                <position>modal</position>
+                <position>debug</position>
+        </positions>
+        <languages folder="language">
+                <language tag="uk-UA">uk-UA/uk-UA.tpl_sumdu.ini</language>
+                <language tag="uk-UA">uk-UA/uk-UA.tpl_sumdu.sys.ini</language>
+                <language tag="ru-RU">ru-RU/ru-RU.tpl_sumdu.ini</language>
+                <language tag="ru-RU">ru-RU/ru-RU.tpl_sumdu.sys.ini</language>
+                <language tag="en-GB">en-GB/en-GB.tpl_sumdu.ini</language>
+                <language tag="en-GB">en-GB/en-GB.tpl_sumdu.sys.ini</language>
+        </languages>
+        <config>
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field type="spacer" name="spacer" label="&lt;b&gt;Site Settings:&lt;/b&gt;" />
+                                <field
+                                        name="site_logo"
+                                        type="media"
+                                        label="Site Logo"
+                                        description="Site Logo Image"
+                                />
+                                <field
+                                        name="site_title"
+                                        type="text"
+                                        label="TPL_SUMDU_FIELD_SITETITLE_LABEL"
+                                        description="TPL_SUMDU_FIELD_SITETITLE_DESC"
+                                        class=""
+                                        filter="string" 
+                                />
+                                <field
+                                        name="site_description"
+                                        type="textarea"
+                                        label="TPL_SUMDU_FIELD_SITEDESC_LABEL"
+                                        description="TPL_SUMDU_FIELD_SITEDESC_DESC"
+                                        filter="string" 
+                                        rows="3"
+                                />
+                        </fieldset>
+                        <fieldset name="moreoptions">
+                                <field type="spacer" name="spacer_0_1" label="&lt;b&gt;Advaced Template Settings:&lt;/b&gt;" />
+                                <field
+                                        name="show_sumdu_header"
+                                        type="radio"
+                                        label="Display SumDU header"
+                                        description="Display SumDU header"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field type="spacer" name="spacer_0_2" hr="true" showon="show_sumdu_header:1" />
+
+                                <field
+                                        name="show_logo_sumdu"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_SHOW_LOGO_LABEL"
+                                        description="TPL_SUMDU_FIELD_SHOW_LOGO_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        showon="show_sumdu_header:1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="show_documents"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_SHOW_DOCUMENTS_LABEL"
+                                        description="TPL_SUMDU_FIELD_SHOW_DOCUMENTS_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        showon="show_sumdu_header:1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="show_all_sumdu"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_SHOW_ALL_SUMDU_LABEL"
+                                        description="TPL_SUMDU_FIELD_SHOW_ALL_SUMDU_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        showon="show_sumdu_header:1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field type="spacer" name="spacer_0_3" hr="true" showon="show_sumdu_header:1" />
+
+                                <field
+                                        name="fixed_width"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_FIXED_WIDTH_LABEL"
+                                        description="TPL_SUMDU_FIELD_FIXED_WIDTH_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="sticky_header"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_STICKY_HEADER_LABEL"
+                                        description="TPL_SUMDU_FIELD_STICKY_HEADER_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="show_search"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_SHOW_SEARCH_LABEL"
+                                        description="TPL_SUMDU_FIELD_SHOW_SEARCH_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                        </fieldset>
+                        <fieldset name="googleoptions">
+                                <field type="spacer" name="spacer_1" label="&lt;b&gt;Google Analytics Settings:&lt;/b&gt;" />
+                                <field
+                                        name="google_analytics_key"
+                                        type="text"
+                                        label="TPL_SUMDU_FIELD_GOOGLE_ANALYTICS_KEY_LABEL"
+                                        description="TPL_SUMDU_FIELD_GOOGLE_ANALYTICS_KEY_DESC"
+                                />
+                                <field
+                                        name="google_analytics_linker_domains"
+                                        type="textarea"
+                                        label="Google Analytics Linker Domains"
+                                        description="Google Analytics Linker Domains Value"
+                                        rows="3"
+                                />
+                                <field type="spacer" name="spacer_2" label="&lt;hr/&gt; &lt;b&gt;Google Tag Manager Settings:&lt;/b&gt;" />
+                                <field
+                                        name="google_tag_manager_key"
+                                        type="text"
+                                        label="Google Tag Manager Key"
+                                        description="Google Tag Manager Key Value"
+                                />
+                        </fieldset>
+                        <fieldset name="apioptions">
+                                <field type="spacer" name="spacer_3" label="&lt;b&gt;API Settings:&lt;/b&gt;"/>
+                                <field
+                                        name="sumdu_api_key"
+                                        type="text"
+                                        default="sumdu_api"
+                                        label="SumDU API Key"
+                                        description="SumDU API Key"
+                                />
+                        </fieldset>
+                        <fieldset name="styleoptions">
+                                <field type="spacer" name="spacer_4" label="&lt;b&gt;Theme Settings:&lt;/b&gt;"/>
+                                <field
+                                        name="sumdu_theme"
+                                        type="list"
+                                        label="SumDU Theme Style"
+                                        description="SumDU Theme Style"
+                                        required="true" 
+                                        default="basic"
+                                        >
+                                        <option value="basic">Basic</option>
+                                        <option value="lightblue">Light Blue</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="darkblue">Dark Blue</option>
+                                        <option value="green">Green</option>
+                                        <option value="red">Red</option>
+                                        <option value="orange">Orange</option>
+                                        <option value="gray">Gray</option>
+                                </field>
+                                <field type="spacer" name="spacer_4_1" label="&lt;hr/&gt; &lt;b&gt;Extra Style Settings:&lt;/b&gt;"/>
+                                <field
+                                        name="enable_news_style"
+                                        type="radio"
+                                        label="Enable News CSS"
+                                        description="Enable News CSS Values"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_events_style"
+                                        type="radio"
+                                        label="Enable Events CSS"
+                                        description="Enable Events CSS Values"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_ranking_style"
+                                        type="radio"
+                                        label="Enable Ranking CSS"
+                                        description="Enable Ranking CSS Values"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_jcomments_style"
+                                        type="radio"
+                                        label="Enable JComments CSS"
+                                        description="Enable JComments CSS Values"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field type="spacer" name="spacer_5" label="&lt;hr/&gt; &lt;b&gt;Custom Style Settings:&lt;/b&gt;"/>
+                                <field
+                                        name="enable_custom_style"
+                                        type="radio"
+                                        label="Enable Custom CSS file"
+                                        description="Enable Custom CSS file"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="custom_style"
+                                        type="textarea"
+                                        label="Custom CSS"
+                                        description="Custom CSS Value"
+                                        rows="15"
+                                        cols="200"
+                                        showon="enable_custom_style:1"
+                                />
+                        </fieldset>
+                        <fieldset name="liboptions">
+                                <field type="spacer" name="spacer_6" label="&lt;b&gt;Dev Mode Settings:&lt;/b&gt;" />
+                                <field
+                                        name="enable_dev_mod"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_DEV_MOD_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_DEV_MOD_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field type="spacer" name="spacer_7" label="&lt;hr/&gt; &lt;b&gt;Vendor Libs Settings:&lt;/b&gt;"/>
+                                <field
+                                        name="enable_jquery"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_JQUERY_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_JQUERY_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="0"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_bootstrap_2"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_BOOTSTRAP_2_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_BOOTSTRAP_2_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_fontawesome"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_FONTAWESOME_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_FONTAWESOME_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_slick"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_SLICK_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_SLICK_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_slick_lightbox"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_SLICK_LIGHTBOX_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_SLICK_LIGHTBOX_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                                <field
+                                        name="enable_animate_css"
+                                        type="radio"
+                                        label="TPL_SUMDU_FIELD_ENABLE_ANIMATE_CSS_LABEL"
+                                        description="TPL_SUMDU_FIELD_ENABLE_ANIMATE_CSS_DESC"
+                                        class="btn-group btn-group-yesno"
+                                        default="1"
+                                        >
+                                        <option value="1">JYES</option>
+                                        <option value="0">JNO</option>
+                                </field>
+                        </fieldset>
+
+                </fields>
+        </config>
+</extension>

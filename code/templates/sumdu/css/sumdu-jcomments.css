@@ -1,0 +1,51 @@
+/**
+* @author Design & Accessible Team (Sumy State University)
+* @package Joomla
+* @subpackage Accessible-Template-SSU
+* @copyright Copyright (C) 2010 - 2019 Open Source Matters. All rights reserved.
+* @license GNU/GPL, see LICENSE.php
+* Joomla! is free software. This version may have been modified pursuant to the
+* GNU General Public License, and as distributed it includes or is derivative
+* of works licensed under the GNU General Public License or other free or open
+* source software licenses. See COPYRIGHT.php for copyright notices and
+* details.
+*/
+
+/* SumDU JComments */
+#comments-footer {
+	display: none;
+}
+#comments {
+	padding-top: 20px;
+}
+#comments .comments-list {
+	margin-left: 0;
+}
+#comments-list-footer {
+	margin: 0 !important;
+}
+#comments-form p, 
+#comments-form #comments-form-buttons,
+#comments-form #comments-form-error,
+#comments-form #comments-form-captcha-holder {
+	margin-left: 0 !important;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+#jc .rbox {
+	margin: 0;
+	padding: 20px;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#comments .comment-title {
+	color: #1659b0;
+}
+#comments a:active, #comments a:focus, #comments a:hover {
+	color: #1659b0 !important;
+}
+#comments .comment-body {
+	padding: 10px 0 0 0;
+}
